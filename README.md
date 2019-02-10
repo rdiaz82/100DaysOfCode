@@ -4,4 +4,6 @@
 
 **Day 2:** Today I have started with the AWS cloud practitioner certification. I have started with the first video course. 
 
-**Day 3** Today I have continued watching videos for the AWS Cloud Practitioner certification
+**Day 3** Today I have continued watching videos for the AWS Cloud Practitioner certification.
+
+**Day 4** Today I have continued with AWS Clous Practitioner Certification course.
