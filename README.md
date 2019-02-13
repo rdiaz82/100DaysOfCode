@@ -11,3 +11,5 @@
 **Day 5** Today I have been dealing with mail backup. I used offlineImap to create a local backup of my server because I'm closing our 1&1 server because we are not using it.
 
 **Day 6** I have resumed the AWS cloud practitioner certification course :smile: 
+
+**Day 7** Today I have continued with the AWS cloud practitiones course, just one module to finish it :rocket: 
