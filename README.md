@@ -15,3 +15,9 @@
 **Day 7** Today I have continued with the AWS cloud practitiones course, just one module to finish it :rocket: 
 
 **Day 8** I have finished today the official AWS cloud practitioner course :happy:. Now it's time to start the a cloud guru course. 
+
+**Day 9** I have started with a cloud Guru AWS cloud practitioner course.
+
+**Day 10** I continued with the cloud practicioner course
+
+**Day 11** I have started today a document with my own notes about the a cloud guru course.  
