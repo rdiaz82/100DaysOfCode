@@ -6,7 +6,7 @@
 
   1. Trade capital expense for variable expense (avoid high invesment in data center).
 
-  2. Benefice from massice economies of scale, amazon build it own servers.
+  2. Benefice from massive economies of scale, amazon build it own servers.
   3. Stop guessing about capacity: You use much power as you need.
   4. Increase your speed and agility. 
   5. Stop spending money maintaining data centers
@@ -14,15 +14,15 @@
 
 * Types of cloud computer
 
-  1. Infraestructure as a service (AWS)
-  2. Platform as a services: (GoDaddy) just upload your content and they manager the underlying hardware also Beanstalk is a good example
-  3. Software as a Service (Lamda)
+  1. **Infraestructure as a service** (AWS)
+  2. **Platform as a services**: (GoDaddy) just upload your content and they manager the underlying hardware also Beanstalk is a good example
+  3. **Software as a Service** (Lamda)
 
 * Type of cloud computer deploying
 
-  1. Plubic cloud AWS, Azure...
+  1. Public cloud: AWS, Azure...
   2. Hybrid mixture between public and private
-  3. private cloud, you manage your data center
+  3. Private cloud, you manage your data center
 
 * services included in the Cloud Practitioner Certification
 
@@ -42,4 +42,116 @@
   * Security
   * AWS Cost Management
 
-  ## Around the World With AWS
+## Around the World With AWS
+
+*  **19 regions and 57 availabilty zones**
+* in 2019 there will be added 5 more regions and 15 more availability zones
+* **Availability zone = Data center**, in fact the could be formed by several data center but they are considered as only one AZ
+* a Region is a geographical zone and is composed by two or more availability zones.
+* GovCloud zone is used by US goverment and it can be used just for governamental applications with a lot of restrictions. 
+* **Edge location** are endpoints for AWS which **are used for caching content**. Typically this consists of CloudFront, Amazon's Content delivery Network (CDN)
+* Currently there are more Edge location than Regions, more than 150 Edge locations!
+
+## Let's Log In To AWS-Lab
+
+* Create an Account with a one year free tier with a lot of services included!
+* The four levels for support are availabe at sign up process:
+  * **Basic**: Comunnity forums
+  * **Developer**: Support center response 12-24h (29$/month)
+  * **Business**: 24x7 phone and 1 hour response (100$/month)
+  * **Enterprise**: One Technical account manager and 15 minute response (15000$/month)
+* N. Virginia is the oldest Region and all services all publish first in this region.
+* The first task in the account should be use **CloudWatch** and enable to receive email if your free tier is near to reach its limit. 
+* Also it is recomendable to create a billing alarm if your spent money reach 10$
+
+## Let's Start to Cloud! Identity Access Management (IAM) 
+
+* AIM allows to create users and groups
+* The IAM is global so the configuration are not attached to any specifi region. 
+* All the users can interact with AWS services in three different ways:
+  1. Via the AWS Console
+  2. Programatically using the comand line client
+  3. Using SDKs
+* Groups are simply a place to store your users with common permissions
+* The root account is the email used to create the account but normally all user should have it own user and the root account should be used just for administration. 
+* Virtual MFA device will use Google Authenticator to enable multi factor authentication for root user. 
+* the sign in for user alias can be customized.
+* For users there are two types of access:
+  * Programmatic access: Enable access keyID and secret for the AWS API, CLI etc...
+  * AWS Management Console access: Enable a password to access to AWS managmeent console.
+* For permission management we have three different options:
+  * Add user to an existing group
+  * Copy permission from another user
+  * Attach the permission policy as Json
+* Amazon provides a lot of predesigned User groups that can be used as templates for your own groups. 
+* User can also have some custom key/value tags to add your own information like department,
+* Under of IAM you can define also your users password policy, type of characters, length, force password rotation, etc...
+
+## S3 101
+
+* S3 is Simple Storage Service, is one of the most old AWS services, released in 2006.
+* The AWS definition: S3 provides developers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use with a simple web interface to store and retrieve any amount of data from anywhere on the web.
+* S3 is a place to storage all your flat file videos, images, etc..
+* S3 is object based, so you can install a SO on it. 
+* The data are spread accross multiple devices and multiple facilities.
+* the maxim file size is 5TB
+* Files are storaged in Buckets, just a folder in the cloud. 
+* The S3 is a universal namespace, so everytime you create a bucket, it name have to be unique globally. 
+* The S3 url has this format: https://S3-zone.amazonaws.com/your_bucket
+* When you upload a file to S3 you will receive a HTTP 200 code if the upload was successful
+* S3 is a object based storage with the following information:
+  1. Key: filename
+  2. Value: Actual data converted into a sequence of bytes
+  3. Version Id: Important for versioning
+  4. Metadata: additional info about the file
+  5. Subresources: **Find more info about this!!**
+     1. Access Control List
+     2. Torrent
+* Data consistency in S3:
+  * Read after Write consistency for PUTS of new objects
+  * Eventual consistency for overwrite PUTS and DELETE (it can take some time to propagate). If you update and read you can get the old file because of propagation. 
+* S3 is guarantied for 99.99% for S3
+* Amazon garantee 99.9% of availabity
+* S3 durability is 99.999999999% (11s 9)
+* Tiered Storage Available
+* LifeCycle Management you can decide what to do with yourfile after a time
+* File Versioning
+* Encryptation
+* Secure data using Access Control List and Bucket Policies
+* S3 Storage Classes
+  1. S3 Standard: 99.9% availability 11 9's % durability, redundant across multiple devices in multiples facilities and disegnid to sustain the loss of two facilities zoncurrently
+  2. S3-IA (Infrequently accessed). For data that are accessed less frequently but with rapid access when needed. Charged for retrieval fee. 
+  3. S3 One-zone-IA. Lower cost option for infrequently access data without multiple Availability zones.
+  4. S3 - Intelligent Tiering: Designed to optimise your cost automatically moving data 
+  5. S3 Glacier: Secure, durable and low cost storage for data archiving. Retrieval time from minute to hours
+  6. S3 Glacier Deep Archive: lowest cost with retrieval time of 12 hours.
+* Your are chaged in the following ways:
+  1. Storage
+  2. Requests
+  3. Storage Management pricing
+  4. Data transfer pricing
+  5. Transfer Acceleration
+  6. Cross Region Replication pricing
+* Transfer acceleration enable fast, easy and secure transfers of files over long distances between end users and S3 bucket. Transfer Acceleration takes advantages of Amazon CloudFront's globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path. 
+* Cross Regions Replication allows you to have two buckets syncronized between different zones. 
+
+## Let's create a S3 bucket!
+
+* When you see your buckets on the console you are view them globally but  you can have buckets in individual regions.
+* The bucket name should be DNS compliant.
+* By default all bucket are protected so we need to disable protection to read/write
+* Anything hosted on S3 is not public, so you need to specify the file to be public
+* You can change your object properties on the fly.
+
+## Let's create a Website static
+
+* upload you content to the bucket
+* Enable web hosting
+* add a bucket policy to make all files publics
+* Edit public access is disable by default so if you try to change the policy you get an error. You have to go to bucket option and disble this protection.
+* S3 automatically scale accord with your demand and you can support high traffic using static websites. 
+
+## Let's explore Cloud Front
+
+
+
