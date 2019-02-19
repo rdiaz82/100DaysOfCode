@@ -23,3 +23,5 @@
 **Day 11** I have started today a document with my own notes about the a cloud guru course.  
 
 **Day 12** Today I have continued with the AWS cloud practitioner course from A cloud Guru. Today S3!
+
+**Day 13** Today I have seeing some videos about EC2 instances in the cloud practitioner course.  

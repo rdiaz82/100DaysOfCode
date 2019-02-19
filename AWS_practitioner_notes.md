@@ -153,5 +153,53 @@
 
 ## Let's explore Cloud Front
 
+* Cloud front is a content delivery network or CDN. is a system of distributed servers that deliver webpages and other web content based on the geographic location of the user, the origin of the webpage and a content delivery server.
+* Edge locations. This is the location where the content can be cached. Separated from regions and Availability zones
+* Origin: This is the origin of all files that the CDN will distribute (S3, EC2, elastic load balancer, route 53)
+* Distribution: This is the name given the CDN which consists of a collection of edge locations.
+* The normal operation is the following.
+  1. A first user request a file to a edge location.
+  2. if the edge location doesn't include the file, it is downloaded from the origin
+  3. if another user using the same edge location ask for the same file, that user will receive the cache copy from the edge location. 
+* Cloud Front support the following delivery technologies
+  1. We distribution
+  2. Real Time Multimedia protocol (RMTP)
+* In AWS console Cloud Front is under networking. 
+* Edge locations are not just Read only, you can put objects on to them.
+* TTL time to live of cached file
+
+## EC2 101
+
+* Elastic Compute clous is just a virtual server/server in the cloud
+* It reduces the time to obtain and boot new servers instances to minutes allowing you to quickly scale your capacity according to your requeriments.
+* Pricing models:
+  1. On demand: allows you to pay a fix rate by the time of use
+     * Useful for low cost and flexibility without long term use
+     * Application with hirt term, spiky or unpredictable work loads
+     * Development
+  2. Reserved: provides you a capacity reservation and offer a significant discount compared with On demand instances. Normally you have to sign a 1 year of 3 years contract.
+     * Applications with steady setate or predictable use
+     * applications that require reserved capacity
+     * Upfront payment to reduce long term costs
+     * Reserved price model:
+       1. Standard:75% off more you pay up front and long term more discount.
+       2. Convertible: 54% and allow you to change the attributes of the reserve instance. 
+       3. Schedule reserve: Launch instances in a time window.
+  3. Spot: Enable you to bid whatever price you want to pay for your computation capacity. it offer grater saving if your application have flexible start and stop times. 
+     * Allow compute a low prices
+  4. Dedicated hosts. Physical EC2 server dedicated for your use. It will help you to reduce cost by allowing you to use your existing server-bound software licenses.
+     * Useful for regulatory requirements
+     * great for licensing that not support multi tenancy
+     * if a Spot instance is terminated by EC2 you will not pay for a partial hour of usage. However if you terminate the instance yourself you will be charged for any hour in which the instance ran.
+* Amazon EBS allows you to create storage volumes and attach them to ECs instances. Once attached, you can create a file system on top these volumes, run database or use them in any other way you would use a block device. EBS volumes are places in a specific availability zone replicated.
+* EBS types:
+  1. SSD General purpose
+  2. provisiones IOPS SSD
+  3. Magnetic Throughput HHD (frequent access)
+  4. Cold HHD
+  5. Magnetic
+
+## Let's use EC2
+
 
 
