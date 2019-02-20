@@ -25,3 +25,5 @@
 **Day 12** Today I have continued with the AWS cloud practitioner course from A cloud Guru. Today S3!
 
 **Day 13** Today I have seeing some videos about EC2 instances in the cloud practitioner course.  
+
+**Day14** Today I have started a little research about OpenWhisk Runtime development in order to start to implement a Runtime for Rust.
