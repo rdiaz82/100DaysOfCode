@@ -26,4 +26,8 @@
 
 **Day 13** Today I have seeing some videos about EC2 instances in the cloud practitioner course.  
 
-**Day14** Today I have started a little research about OpenWhisk Runtime development in order to start to implement a Runtime for Rust.
+**Day 14** Today I have started a little research about OpenWhisk Runtime development in order to start to implement a Runtime for Rust.
+
+**Day 15** Today I have continued learning about OpenWhisk Runtime development. I have been focusing trying to understand how the ActionLoops works. 
+
+**Day 16** I have continue learning about ActionLoops in Openwhisk checking the ActionLoop for Go. I'm really excited to implement this in Rust. 
