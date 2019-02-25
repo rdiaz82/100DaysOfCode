@@ -30,4 +30,9 @@
 
 **Day 15** Today I have continued learning about OpenWhisk Runtime development. I have been focusing trying to understand how the ActionLoops works. 
 
-**Day 16** I have continue learning about ActionLoops in Openwhisk checking the ActionLoop for Go. I'm really excited to implement this in Rust. 
+**Day 16** I have continue learning about ActionLoops in Openwhisk checking the ActionLoop for Go. I'm really excited to implement this in Rust :grinning:
+
+**Day 17** I have been working on the Openwhisk runtime implementation for Rust :tada:
+
+**Day 18** I have continued working onthe runtime implementation :muscle: 
+
