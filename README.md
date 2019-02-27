@@ -36,3 +36,5 @@
 
 **Day 18** I have continued working onthe runtime implementation :muscle: 
 
+**Day 19** Today I have been preparing some stuff theo the serverless days in Amsterdam for the next March 29th
+
