@@ -38,3 +38,5 @@
 
 **Day 19** Today I have been preparing some stuff theo the serverless days in Amsterdam for the next March 29th
 
+**Day 20** Today I have updated the README for the OpenWhisk and Rust IoT application demo project :rocket:
+
