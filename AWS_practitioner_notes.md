@@ -201,5 +201,23 @@
 
 ## Let's use EC2
 
+* EC2 is a region service you have your instances in one regions
+* When you launch a new instane you have to select the AMI
+* After this you have to select type of instance
+* After EC2 configuration you have to add EBS
+* The instance can have some tags 
+* Finally you have to define your security group for that particular instance
+* To allow accessfrom everywhere the security group should have 0.0.0.0/0 as source for each interest protocol ports
+* The last part of the instance creation is the creation or selection of a key pair
+* To connect using ssh you shoudl use `ssh ec2-user@instace.ip -i your_key.pem`
+
+## Using The Command Line
+
+* you have to download your private access key in csv format
+* the command line can interact with AWS services
+* The access to command line can be done by roles or by user
+
+## Using Roles
+
 
 

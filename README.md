@@ -40,3 +40,5 @@
 
 **Day 20** Today I have updated the README for the OpenWhisk and Rust IoT application demo project :rocket:
 
+**Day 21** After two days of relax, today I resumed the challenger doing some modifications into the actionLoop for Rust support into OpenWhisk
+
