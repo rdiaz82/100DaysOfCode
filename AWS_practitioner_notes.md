@@ -219,5 +219,76 @@
 
 ## Using Roles
 
+* IAM inside console
+* Select the service to be applied the role
+* We need to add a policy to the role
+* simple add name and tags
+* Once the role is created you can attach the role to an EC2 instance for example.
+* The good part of roles is that your credentials are not stored inside the instance.
 
+##Let's build a Web server
+
+* Create EC2 instance
+* install apache with yum 
+* start apache service
+* put your content on /var/www/html
+
+## Let's use a load balancer
+
+* Application Load Balancer is good for applications
+* Network load balancer is for high performance and static ip adresses
+* Classic Load Balancer is for older services
+* Select http port 80 and all availability zones
+* use the security group webDMZ
+* Select the target group and your ec2 application instances
+* you can add your own script to run at ec2 boot using user data when you configure your instance
+
+## Databases 101
+
+* Relational database is AWS-RDS (OLTP)
+  * SQL Server
+  * Oracle
+  * PostgreSQL
+  * MySql server
+  * Aurora
+  * MariaDb
+* Multiple Availability Zones for disaster
+* Read Replicas to improve performance up to 5 copies
+* Non relational database DynamoDb
+* Data warehousing database: Redshift (OLAP)
+* ElasticCache is a web service that maskes ir easy to deploy, operate and scale in-memory cache in the cloud. ElastiCache support two caching engines:
+  * memcached
+  * redis
+
+## Let's provision an RDS instance
+
+* Provision RDS
+* Provision an Aplication LoadBalancer
+* Create a target group
+* create an EC2 instance
+* Register the instance to the target group
+* Open MySQL port to Web-DMZ
+* Connect to DNS name to load balancer
+* Install your app
+
+## Autoscaling
+
+* Create a launch configuration first to configure the ec2 instances created for the autoscaling group.
+* Then simply create the autoscaling group attached to the automatic load balancer
+
+## Let's register a domain name
+
+* Route 53 is the place to management all the things related with DNSs
+
+## Let's look at Elastic Beanstalk
+
+* will provision all the infraestructure to run automatically an application just uploading your code and forgetting about the infraestructure under the curtains
+
+## Let's look at Cloudformation
+
+* Is a tool that allows you to design an aws architecture directly from code. 
+* The templates are written in son or yams and they describe a complete stack for run your applications.
+* From templates you only need to define the different parameters to run your application like instances types, database configuration etc...
+
+## Architecting for the cloud
 

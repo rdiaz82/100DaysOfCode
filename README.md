@@ -42,3 +42,19 @@
 
 **Day 21** After two days of relax, today I resumed the challenger doing some modifications into the actionLoop for Rust support into OpenWhisk
 
+**Day 22** Today I have reading about serverless patterns
+
+**Day 23** busy days at work, so I have been doing work stuff
+
+**Day 24** busy days at work, so I have been doing work stuff
+
+**Day 25** I have been working on changing method signatures and logging methods for the Openwhisk Rust runtime
+
+**Day 26** I have been working on the slides for the serverless day
+
+**Day 27** I have been finishing the slides for the Serverless Day the next March 29 in Amsterdam
+
+**Day 28** Today I have resumed the AWS course in A Cloud Guru
+
+
+
