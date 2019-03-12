@@ -58,6 +58,8 @@
 
 **Day 29** Today I have working on the medium article about OpenWhisk with Rust for IoT Applications and advanced a little bit with the Cloud Practitioner course. 
 
+**Day 30** Today I have continued with the cloud practitioner course and I have been reading some articles about category theory 
+
 
 
 

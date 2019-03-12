@@ -360,3 +360,89 @@
   * Security as code
   * Real time auditing
 * **All of previous point are explained in this article: https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf It is recommended to read this paper the day before the exam**
+
+## AWS Pricing 101
+
+* Important white paper about pricing: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+* Pay as you go
+* Pay less when you reserve
+* Payless per unit using more
+* pay less as AWS grow
+* Understand fundamentals of cost
+  * Compute
+  * Storage
+  * Data Outbound
+
+* Start early with cost optimization
+* Maximize the power of flexibility
+  * Not pay for resources if you are not using them
+* Pricing models
+  * On demand
+  * Dedicated instance
+  * Spot instances
+  * reservations
+* Free tier
+* Free services
+  * Amazon VPC
+  * Elastic Beanstalk but provisioned resources not
+  * Cloud formation the same
+  * IAM
+  * Autoscaling but not resources
+  * Opsworks
+  * Consolidated Billing
+* What determines price?
+  * Clock hours of Serve Time
+  * Instance type
+  * Pricing Model
+  * Number of Instances
+  * Load Balancing
+  * Detailed Monitoring
+  * Ayuto Scaling
+  * Elastic IP Addresses
+  * Operating System and Software packages
+* paying in upfront implies more discount and even more if the instances are reserved
+* Lambda pricing
+  * Number of request
+  * Duration Time
+  * Additional charges, S3, Db... etc
+* What determine the prices for EBS
+  * Volume (GB)
+  * Snapshots (GB)
+  * Data Transfer
+* Pricing S3
+  * Storage Class
+  * Storage
+  * numbe of request
+  * Data transfers
+* Pricing Glacier
+  * Storage
+  * Data retreival time
+* Snowball (migration service to AWS using a gigant hard disk )
+  * Fee per job size
+  * Daily charge for the device 15 days free
+  * S3 out traffic
+* Prices of RDS
+  * Clock hours of server
+  * Database characteristic
+  * Database type
+  * Number of Instances
+  * Provisioned Storage
+  * Additional Storage
+  * Request
+  * Deployment type
+  * Data transfer
+* DynamoDb
+  * Read
+  * Write
+  * indexed Data storage
+* Cloud front
+  * Traffic distribution
+  * Request
+  * Data transfer out
+
+## Support Plan
+
+- Basic
+- Developer
+- Business
+- Enterprise
