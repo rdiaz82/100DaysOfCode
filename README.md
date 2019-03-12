@@ -56,5 +56,9 @@
 
 **Day 28** Today I have resumed the AWS course in A Cloud Guru
 
+**Day 29** Today I have working on the medium article about OpenWhisk with Rust for IoT Applications and advanced a little bit with the Cloud Practitioner course. 
+
+
+
 
 

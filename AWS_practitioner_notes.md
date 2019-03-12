@@ -292,3 +292,71 @@
 
 ## Architecting for the cloud
 
+* Comparing cloud computing VS traditional computing
+  * IT assets as provisioned resources
+  * in Traditional approach you have to buy a lot of hardware
+  * In cloud computing you have global availability and scalable capacity
+  * High level of managment
+  * Built-in Security
+  * Architecting for cost. A cloud infraestructure is most cost efficient than a traditional computing.
+* Scalability
+  * Scale up modifying the size of instances
+  * Scale out 
+    * increasing the number of instances
+    * Use stateless applications like lambdas
+    * Distribute load to multiple nodes
+* Disposable resoruces Instead Fixed servers
+  * Bootstrapping (boot scripts for EC2 instances)
+  * Golden Images with your own presets
+  * Containers
+  * Hybrid, combination of containers and EC2 instances
+* Infraestructure as a code
+  * Cloud Formation
+* Automation
+  * Serverless Management and deployment
+  * Infraestructure management and deployment (Beanstalk)
+  * Amazon EC2 autorecovery
+  * AWS system manager
+  * Auto Scaling
+  * Alarms and Events
+    * Amazon cloudwatch alarms
+    * Amazon cloudwatch events
+    * AWS lambda schedules events
+    * AWS WAF security automations, actions when hack things are detected.
+* Loose coupling
+  * Amazon API Gateway
+  * Implement service discovery use of SQS (queues)
+* Distributed systems best practices
+  * Graceful failure
+  * Recover from error
+* Serverless
+  * Managed services
+  * Serverless architectures
+  * Use of Lambdas in combination with API gateway
+* Databases
+  * Relational databases (Aurora)
+  * No relational Database (DynamoDb)
+  * Data Warehouse (Redshift)
+  * Search services
+  * Graph Database (Amazon Neptune)
+* Remove Single point of Failure
+  * Redundancy
+  * Failure Detection
+  * Durable Data Storage
+  * Automated multi data centre resilience
+  * Fault isolation and horizontal scaling
+  * Sharding (split data processing in multiple instances)
+* Optimize for cost
+  * Right sizing
+  * Elasticity
+  * Take advantage of variety of purchasing options
+* Caching
+  * Application caching
+  * Edge caching
+* Security
+  * Use AWS Features for defense in Depth
+  * Share Security responsability model
+  * Reduced privileges access
+  * Security as code
+  * Real time auditing
+* **All of previous point are explained in this article: https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf It is recommended to read this paper the day before the exam**
