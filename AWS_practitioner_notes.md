@@ -363,7 +363,7 @@
 
 ## AWS Pricing 101
 
-* Important white paper about pricing: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+* **Important white paper about pricing: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf**
 * Pay as you go
 * Pay less when you reserve
 * Payless per unit using more
@@ -446,3 +446,83 @@
 - Developer
 - Business
 - Enterprise
+
+## Tags resources
+
+* You can group resources under key value tags. This will help you to browse through your resources and find them easily.
+* Creating a group, you can execute automation in all your resources in a simple way. Something like stop all instances under the same tag etc...
+* Resources group in combination with AWS system manager allow you to control and execute automation against entire fleet of EC2 instance just with one click.
+* Tag editor is global service
+
+## Consolidated Billing
+
+* AWS organisations is an account manager service that enables you to consolidate multiple AWS accounts into an Organization that you create and centrally manage.
+* It has to feature sets:
+
+  * Consolidated billing
+  * All features
+* you can have a Root account that manage multiple organization units with several aws accounts
+* Paying account is independent. Cannot access resources of the other accounts. 
+* The advantages of consolidated billing includes:
+
+  * One bill per AWS account
+  * Very easy to track charges and allocate costs
+  * Volume pricing discount
+* Best practices with AWS organizations
+
+  * Always multifactor authentication
+  * Always user strong password
+  * paying account should be used just for billing
+* The maximum number of linked accounts is 20
+* Cloud Trail
+
+  * Cloud Trail monitor all API calls in AWS platform
+* Per AWS account per region
+  * Can consolidate logs using S3 bucket in the paying account
+
+## AWS Organizations
+
+* The organization can have multiple organization units and each unit can have several accounts.
+* The security policy can be applied directly to the organization unit and all it associated accounts or directly to a particular account. 
+
+## Quick start and AWS landing zones
+
+* Quick start is an automatic deploy tool, just select your cloud formation and deploy it. It is based in Cloud formation templates
+* AWS landing zones allows you to create a multiaccount environment
+
+## AWS Calculators
+
+* this tool helps you to calculate your AWS cost based in two features:
+  * AWS simple monthly calculator
+  * AWS total cost of ownership calculator: the cost of create your infraestructure by your own.
+
+* **Important: all the information is included in this white paper: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf**
+
+## AWS Complains
+
+* PCI DSS Level 1: payment compliances at infraestructure level. 
+* HIPAA: medical information compliance
+* AWS is following a lot of compliance
+
+## AWS Shared Responsability Model
+
+* While AWS manages security of the cloud, security in the cloud is the responsability of the customer. Customer retains control what security they choose to implement to protect their own content, platform, applications, system and networks, no differently than they would in and on-site datacenter.
+* Amazon is responsible of the Regions, Availabilities zones, edge locations, compute, storage, database, networking. 
+* AWS is responsible of something like hypervisor, patch for mysql, etc...
+* The customer is responsible of Client data encryption, data authentication and data integrity, server side encryption, network traffic protecttion
+* Also the user is responsable of Operating system, network configuration and firewall configuration. Platform, applications, Identity and access management and also for your user data. 
+* **Read Responsibility model https://aws.amazon.com/compliance/shared-responsibility-model/**
+
+## AWS WAF & AWS Shield
+
+* AWS WAF is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessice resources.
+* WAF is a firewall at 7 ISO layer.
+* AWS shield: is a managed Distributed Denial of Service (DDoS) protection service that safeguards web applications running on AWS. AWS shield provides always-on detection and automatic inline mitigation that minimise application downtime and latency,so there is no need to engage AWS support  from DDOs protection. There are two tiers of AWS shield - standard and advance. 
+
+## AWS inspector vs AWS Trusted advisor vs CloudTrail
+
+* Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesss application for vulnerabilities or deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritised by level of severity. These findings can be reviewed directly or as part of detailed assessment reports which are available via the Amazon Inspectos console or API
+* AWS Trusted advisor is an online resource that help you reduce cos, increase performance and improve security by optimizing your AWS environment. Trusted advisor provides real time guidance to help you provision your resources following AWS best practices. Advisor will advise you on Cost optimisation, performance, security and fault tolerance. 
+  * Core check recomendations
+  * Full trusted advisor in Business and enterprise accounts
+* Cloud Trails increases visibility into your user and resource activity by recording AWS Management console actions and API calls. You can identify which users and accounts called AWS, the source IP addess from which the call were made and when the calls occurred.
