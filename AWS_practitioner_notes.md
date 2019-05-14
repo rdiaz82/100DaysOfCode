@@ -2,7 +2,7 @@
 
 * Cloud computer is on-demand delivery of computer under a as pay as you go pricing model
 
-* The 6 advantages of clouf computer are:
+* The 6 advantages of cloud computer are:
 
   1. Trade capital expense for variable expense (avoid high invesment in data center).
 
@@ -56,7 +56,7 @@
 
 * Create an Account with a one year free tier with a lot of services included!
 * The four levels for support are availabe at sign up process:
-  * **Basic**: Comunnity forums
+  * **Basic**: Comunity forums
   * **Developer**: Support center response 12-24h (29$/month)
   * **Business**: 24x7 phone and 1 hour response (100$/month)
   * **Enterprise**: One Technical account manager and 15 minute response (15000$/month)
@@ -92,7 +92,7 @@
 * S3 is Simple Storage Service, is one of the most old AWS services, released in 2006.
 * The AWS definition: S3 provides developers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use with a simple web interface to store and retrieve any amount of data from anywhere on the web.
 * S3 is a place to storage all your flat file videos, images, etc..
-* S3 is object based, so you can install a SO on it. 
+* S3 is object based, so you can't install a SO on it. 
 * The data are spread accross multiple devices and multiple facilities.
 * the maxim file size is 5TB
 * Files are storaged in Buckets, just a folder in the cloud. 
@@ -119,7 +119,7 @@
 * Encryptation
 * Secure data using Access Control List and Bucket Policies
 * S3 Storage Classes
-  1. S3 Standard: 99.9% availability 11 9's % durability, redundant across multiple devices in multiples facilities and disegnid to sustain the loss of two facilities zoncurrently
+  1. S3 Standard: 99.9% availability 11 9's % durability, redundant across multiple devices in multiples facilities and designed to sustain the loss of two facilities zoncurrently
   2. S3-IA (Infrequently accessed). For data that are accessed less frequently but with rapid access when needed. Charged for retrieval fee. 
   3. S3 One-zone-IA. Lower cost option for infrequently access data without multiple Availability zones.
   4. S3 - Intelligent Tiering: Designed to optimise your cost automatically moving data 
@@ -170,7 +170,7 @@
 
 ## EC2 101
 
-* Elastic Compute clous is just a virtual server/server in the cloud
+* Elastic Compute cloud is just a virtual server/server in the cloud
 * It reduces the time to obtain and boot new servers instances to minutes allowing you to quickly scale your capacity according to your requeriments.
 * Pricing models:
   1. On demand: allows you to pay a fix rate by the time of use
@@ -207,7 +207,7 @@
 * After EC2 configuration you have to add EBS
 * The instance can have some tags 
 * Finally you have to define your security group for that particular instance
-* To allow accessfrom everywhere the security group should have 0.0.0.0/0 as source for each interest protocol ports
+* To allow access from everywhere the security group should have 0.0.0.0/0 as source for each interest protocol ports
 * The last part of the instance creation is the creation or selection of a key pair
 * To connect using ssh you shoudl use `ssh ec2-user@instace.ip -i your_key.pem`
 
@@ -359,7 +359,7 @@
   * Reduced privileges access
   * Security as code
   * Real time auditing
-* **All of previous point are explained in this article: https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf It is recommended to read this paper the day before the exam**
+* **All of previous point are explained in this article: https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf It is recommended to read this paper the day before the exam**
 
 ## AWS Pricing 101
 
